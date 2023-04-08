@@ -34,6 +34,9 @@ public abstract class TestBaseRapor {
         extentReports.setSystemInfo("Automation Engineer", "Ugur");
         extentHtmlReporter.config().setDocumentTitle("Son Test");
         extentHtmlReporter.config().setReportName("TestNG Reports");
+
+        //Rapor projeme ekliyorum
+        extentReports.attachReporter(extentHtmlReporter);
     }
 
 

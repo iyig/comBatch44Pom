@@ -2,22 +2,7 @@
 
 <suite name="class'lari paralel calistirma" parallel="classes" thread-count="2" verbose="4">
     
-    <!--
-    TestNG'de testlerimizi paralel calıştrımak kolaydir
-    ANCAK testNG raporlama yapmaz
-    Eger rapor istiyorsaniz her bir test method'unuzu rapor alacak sekilde
-    yeniden dizayn etmelisiniz
-    
-    Paralel calistirma icin
-    1-kac browser'in ayni anda calisacagına(thread-count)
-    2-Hangi Testlerin caliscagina
-    3-Driver'larin görev paylasımını hangi seviyden yapacagina(parallel = package,class,test methodu)
-    karar vermemiz gerekiyor
-    
-    verbose : xml dosyasi calistiktan sonra terminal'da yazdirilan satirlarin az veya çok olmasini sağlar
-    1- en az
-    10- en cok
-    -->
+
     <test name="smoke test paralel calistirma">
         <packages>
             <package name="tests.smokeTest"></package>
@@ -26,3 +11,20 @@
     
     
 </suite>
+
+        <!--
+           TestNG'de testlerimizi paralel calıştrımak kolaydir
+           ANCAK testNG raporlama yapmaz
+           Eger rapor istiyorsaniz her bir test method'unuzu rapor alacak sekilde
+           yeniden dizayn etmelisiniz
+
+           Paralel calistirma icin
+           1-kac browser'in ayni anda calisacagına(thread-count)
+           2-Hangi Testlerin caliscagina
+           3-Driver'larin görev paylasımını hangi seviyeden yapacagina(parallel = package,class,test methodu)
+           karar vermemiz gerekiyor
+
+           verbose : xml dosyasi calistiktan sonra terminal'da yazdirilan satirlarin az veya çok olmasini sağlar
+           1- en az
+           10- en cok
+           -->

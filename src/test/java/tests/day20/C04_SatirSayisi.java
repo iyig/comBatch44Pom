@@ -15,7 +15,7 @@ public class C04_SatirSayisi {
 
         Workbook workbook = WorkbookFactory.create(fis);
 
-              int sayfa1SatirSayisi = workbook.getSheet("Sayfa1").getLastRowNum();
+              int sayfa1SatirSayisi = workbook.getSheet("Sayfa1").getLastRowNum();//SON satır numarası
               int sayfa1FizikiKullanilanSatirSayisi=workbook.getSheet("Sayfa1").getPhysicalNumberOfRows();
 
         System.out.println("1.sayfa satir sayisi:"+sayfa1SatirSayisi);

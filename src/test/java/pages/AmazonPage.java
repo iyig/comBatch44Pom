@@ -11,16 +11,15 @@ public class AmazonPage {
     // parametresiz bir constructor olusturup
     // bu constructor icinde PageFactory ile driver'a ilk deger atamasini yapmak olmalidir
 
-    public AmazonPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public AmazonPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id="twotabsearchtextbox")
+    @FindBy(id = "twotabsearchtextbox")
     public WebElement amazonAramaKutusu;
+
 
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement sonucYazisiElementi;
-
-
 
 }
